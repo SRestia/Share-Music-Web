@@ -1,0 +1,35 @@
+
+/*
+ 直接名字 是选择class和标签的
+ # + 名字 是选择id的
+
+ 选择id的时候，只会选择一个元素
+ 选择class的时候，会选择多个元素
+ */
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;  // 禁止滑动
+    position: absolute;
+}
+
+#main, #app {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.toCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@font-face {
+  font-family: 'Satisfy';
+  src: local(Satisfy-Regular), url('../Font/Satisfy-Regular.ttf') format('truetype');  // 确保路径和文件名正确
+}
