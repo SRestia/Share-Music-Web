@@ -137,7 +137,6 @@ traitlets==5.14.1
 trio==0.24.0
 trio-websocket==0.11.1
 Twisted==22.10.0
-twisted-iocpsupport==1.0.2
 txaio==23.1.1
 types-python-dateutil==2.8.19.20240106
 typing_extensions==4.12.2
