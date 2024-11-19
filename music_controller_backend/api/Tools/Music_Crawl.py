@@ -45,7 +45,7 @@ class QQMusic:
         }
 
     # 根据关键字搜索
-    def search_qq_music(self, query_text) -> list[dict]:
+    def search_qq_music(self, query_text):
         # 请求的链接
         search_url = f'https://c.y.qq.com/soso/fcgi-bin/client_search_cp?p=1&n=10&w={query_text}'
 
@@ -150,7 +150,7 @@ class QQMusic:
         # self.os_process(f'./QQ音乐/{song_mid}/', f'{song_name}.jpg', cover_response.content, 'wb')
 
     # Js逆向,加密
-    def webpack_encode_sign(self, data) -> str:
+    def webpack_encode_sign(self, data):
         with open(f'{self.current_path}QQMusicDecryption.js', 'r', encoding='UTF-8') as file:
             js_code = file.read()
 
@@ -177,7 +177,7 @@ class QQMusic:
         print(f'《{path + file_name}》下载成功')
         print("-" * 40)
 
-    def handle_lyric_str(self, lyric_str) -> list:
+    def handle_lyric_str(self, lyric_str):
         if not lyric_str:
             return ['暂无歌词']
         # 歌词处理
