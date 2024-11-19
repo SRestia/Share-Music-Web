@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-qr(*2783apdfp!o%5$^n%$i_slie9uc17^&*c^01+5s-pu2&sv
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '43.140.200.243']
 
 
 # 设置时区
