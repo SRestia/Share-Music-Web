@@ -249,7 +249,7 @@ if __name__ == '__main__':
     qq = QQMusic()
 
     # 1. 登录QQ音乐
-    qq.login_to_get_cookie_qq_music("2876925475", "011006qW")
+    qq.login_to_get_cookie_qq_music("", "")
 
     # 2.搜索并下载
 
