@@ -130,18 +130,8 @@ class QQMusic:
         # self.os_process(f'./QQ音乐/{song_mid}/', f'{song_name}-lyric.txt', decoded_lyric, 'w')
 
     # 下载封面
-    def download_cover_image(self, song_name, song_mid):
-        music_data_response = requests.get(
-            url="https://y.qq.com/n/ryqq/songDetail/" + song_mid,
-            headers=self.headers,
-        )
-
-        picurl = re.search(r'"picurl":"(.*?)"', music_data_response.text).group(1)
-        # print(f'picurl: {picurl}')
-
-        cover_url = 'https:' + picurl.replace(r'\u002F', '/')
-        # print(f'cover_url: {cover_url}')
-        return cover_url
+    def download_cover_image(self, album_mid):
+        return f"https://y.qq.com/music/photo_new/T002R300x300M000{album_mid}.jpg?max_age=2592000"
 
         # # 请求封面
         # cover_response = requests.get('https:' + picurl.replace(r'\u002F', '/'))
