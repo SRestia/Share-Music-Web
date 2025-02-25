@@ -434,7 +434,7 @@ class MusicPlayInfo(APIView):  # 播放音乐
                 }
 
             else:
-                cover_url = self.crawl.download_cover_image(song_name, song_mid)
+                cover_url = self.crawl.download_cover_image(album_mid)
                 lyric_list = self.crawl.download_lyric(song_name, song_mid)
                 mp3_url = self.crawl.download_music(song_name, song_mid, song_id, album_mid)
 
